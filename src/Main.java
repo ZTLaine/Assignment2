@@ -7,6 +7,12 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         NumGuessGame game = new NumGuessGame(1, 101, 5);
+        System.out.println("Random num is: " + game.getRandomNum());
+        game.startGame();
+    }
+
+
+    public static void originalMain(){
 
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -19,8 +25,8 @@ public class Main {
             System.out.println("Pick a number between 1 and 100");
             guess = scanner.nextInt();
 
-            guess = InRange.inRange(guess, scanner);
-            attempt = EvaluateGuess.checkGuess(rng, guess, attempt);
+            guess = RangeValidator.inRange(guess, scanner);
+            attempt = GuessEvaluator.checkGuess(rng, guess, attempt);
         }while(attempt < 5 && rng != guess);
         scanner.close();
     }
