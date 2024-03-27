@@ -2,7 +2,7 @@
 //  Zack Laine
 //  Assignment 2
 
-public class EvaluateGuess {
+public class GuessEvaluator {
     static int checkGuess(int rng, int guess, int attempt){
 //        I just want to make a note, because this will match the example output correctly
 //        but leaving off with "please pick a higher/lower number" after you've run out of guesses

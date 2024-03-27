@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class InRange {
+public class RangeValidator {
     static int inRange(int guess, Scanner scanner){
         //Checking to be sure it's in range
         while (guess < 1 || guess > 100) {
