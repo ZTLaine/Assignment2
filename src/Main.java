@@ -6,6 +6,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        NumGuessGame game = new NumGuessGame(1, 101, 5);
+
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int guess;
